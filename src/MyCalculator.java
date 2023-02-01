@@ -4,10 +4,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MyCalculator implements ActionListener {
+
     double number, answer;
     int calculation;
-    JFrame frame;//Creating object of JFrame class
-    //Creating objects of Components
+    JFrame frame;
     JLabel label = new JLabel();
     JTextField textField = new JTextField();
     JButton buttonZero = new JButton("0");
@@ -118,31 +118,26 @@ public class MyCalculator implements ActionListener {
         //Setting property of button =
         buttonEqual.setBounds(220, 350, 60, 40);
         buttonEqual.setFont(new Font("Arial", Font.BOLD, 20));
-        buttonEqual.setBackground(new Color(239, 188, 2));
         frame.add(buttonEqual);
 
         //Setting property of button /
         buttonDiv.setBounds(220, 110, 60, 40);
         buttonDiv.setFont(new Font("Arial", Font.BOLD, 20));
-        buttonDiv.setBackground(new Color(239, 188, 2));
         frame.add(buttonDiv);
 
 
         //Setting property of button X
         buttonMul.setBounds(220, 230, 60, 40);
         buttonMul.setFont(new Font("Arial", Font.BOLD, 20));
-        buttonMul.setBackground(new Color(239, 188, 2));
         frame.add(buttonMul);
 
         //Setting property of button -
         buttonMinus.setBounds(220, 170, 60, 40);
         buttonMinus.setFont(new Font("Arial", Font.BOLD, 20));
-        buttonMinus.setBackground(new Color(239, 188, 2));
         frame.add(buttonMinus);
         //Setting property of button +
         buttonPlus.setBounds(220, 290, 60, 40);
         buttonPlus.setFont(new Font("Arial", Font.BOLD, 20));
-        buttonPlus.setBackground(new Color(239, 188, 2));
         frame.add(buttonPlus);
 
 
